@@ -1,0 +1,254 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+    color: white;
+    background: rgba(22,36,71,1);
+}
+
+.main {
+  height: 100vh;
+  perspective: 2px;
+}
+
+.head {
+    width: 100%;
+    position: fixed;        
+    background: rgba(22,36,71,1);
+    color: #fff;    
+    margin: 0;
+    z-index: 100;
+}
+
+.logo img  {
+    width: 150px;
+    margin: 10px 20px;
+}
+
+.menu { 
+    float: right;
+    line-height: 40px;
+    margin: 20px 40px;
+}
+
+.menu a {
+    color: white;
+    display: block;
+    float: left;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.section {
+  position: relative;
+}
+
+.top {
+    background: rgb(22,36,71);
+    background: linear-gradient(170deg, rgba(22,36,71,1) 32%, rgba(228,63,90,1) 100%);
+    min-height: 600px;
+    overflow: hidden;
+  }
+
+.intro {
+  width: 100%;
+  margin-top: 100px;
+}
+
+.intro h1 {
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 1.2em;
+  margin-bottom: 0.6em;
+}
+
+.intro p {
+    display: block;
+    max-width: 500px;
+}
+
+.example-card-wrapper {
+  margin: 100px auto 0 auto;
+}
+
+.example-card {
+  background: white;
+  width: 320px;
+  height: 200px;
+  border-radius: 10px;
+  color: #222643;
+  padding: 40px 20px;;
+}
+
+.example-card h3 {
+  font-size: 1.75em;
+}
+
+.example-card p {
+  font-size: 0.8em;
+}
+
+.example-card .nfc {
+  float: right;
+  width: 48px;
+}
+
+.phone-wrapper {
+  margin: 20px auto 0 auto;
+  height: 300px;
+  padding-left: 150px;
+}
+
+.phone-case {
+  position: relative;
+}
+
+.steps {
+  background-color: #FFFFFF;
+  padding: 20px 0;
+}
+
+.steps h2 {
+  font-size: 1.5em;
+  font-weight: normal;
+  line-height: 2.0em;
+}
+
+.steps div {
+  color: #222643;
+}
+
+.steps h1 {
+  font-weight: normal;
+  color: #bbb;
+}
+
+.contact-us {
+  min-height: 50vh;
+  color: #33475b;
+  background: #decdc3;
+  padding: 20px;
+}
+
+.contact-us h2 {
+  font-size: 1.5em;
+}
+
+.footer {
+  background: rgba(22,36,71,1);
+  line-height: 4.5em;
+  padding: 0 20px;
+}
+
+.contact-form label {
+  width: 80%;
+  display: inline-block;
+  font-size: 0.8em;
+}
+
+.contact-form input {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.25rem;
+  background-color: #FFF6F1;
+  color: #33475b;
+  font: 400 0.875rem/1.375rem "Open Sans", sans-serif;
+  transition: all 0.2s;
+  margin: 0.08rem 0 0.5rem 0;
+  -webkit-appearance: none;  
+}
+
+.contact-form button[type=submit] {
+  border-radius: 0.25rem;
+  background-color: #9C7D6B;
+  width: 100%;
+  padding: 0.5rem 1.3125rem;
+  margin: 0.7rem 0;
+  color: #fff;
+}
+
+.phone {
+  background-image: url(/img/cards-comressed.jpg);
+  background-repeat: no-repeat;
+  background-size: 1310px;
+  height: 540px;
+  width: 242px;
+  overflow: hidden;
+  margin-left: 30px;
+  border-radius: 50px;
+}
+.phone-1 {
+  background-position: -535px;
+}
+
+.phone-2 {
+  background-position: -1069px;
+}
+
+.phone-3 {
+  background-position: -802px;
+}
+
+.phone-4 {
+  background-position: -0px;
+}
+
+.active {
+  background-position: -262px;
+}
+
+.phone-border {
+  background-image: url(/img/iphone12-frame.png);
+  background-repeat: no-repeat;
+  background-size: 306px;
+  width: 306px;
+  height: 580px;
+  position: absolute;
+  top: -23px;
+}
+
+.phone-border-animated {
+  background-image: url(/img/iphone12-frame.png);
+  background-repeat: no-repeat;
+  background-size: 306px;
+  width: 306px;
+  height: 580px;
+  position: absolute;
+  top: -23px;
+}
+
+.use-cases .first {
+  padding: 50px 0;
+  background: linear-gradient(170deg, rgba(0,0,0,1) 32%, rgba(18,49,50,1) 100%);
+}
+
+.use-cases .second {
+  padding: 50px 0;
+  background: linear-gradient(170deg, rgba(35,53,85,1) 32%, rgba(82,122,152,1) 100%);
+}
+
+.use-cases .third {
+  padding: 50px 0;
+  background: linear-gradient(170deg, rgba(145,105,75,1) 32%, rgba(100,40,60,1) 100%);
+}
+
+.use-cases .phone-case {
+  margin: 0 auto;
+  width: 310px;
+}
+
+.use-cases .description {
+  transform: translate(0, -50%);
+  /*margin: 40% 0 0 0;*/
+  display: inline-block;
+  padding: 0 80px;
+}
+
+.use-cases .description h2 {
+  font-size: 2.0em;
+}
